@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumIntro {
@@ -18,9 +19,15 @@ public class SeleniumIntro {
 		
 		*/
 		
+		/*Implementation for Firefox Broswer
+		
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Alex\\SeleniumCourse\\SeleniumCourse\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		
+		*/
+		
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\Alex\\SeleniumCourse\\SeleniumCourse\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
 		driver.get("https://rahulshettyacademy.com/");
 		System.out.println(driver.getTitle());//get the title of the website mentioned in line command on line 14 e shows it
 		System.out.println(driver.getCurrentUrl());//get the current url when the browser comes up
