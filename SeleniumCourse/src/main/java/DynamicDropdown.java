@@ -16,6 +16,9 @@ public class DynamicDropdown {
 		Thread.sleep(500);
 		driver.findElement(By.xpath("//div/ul/li/a[@value='AMD']")).click();
 		
+		
+		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
+		
 
 	}
 
