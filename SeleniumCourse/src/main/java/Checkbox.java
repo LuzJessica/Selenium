@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.*;
 
 public class Checkbox {
 
@@ -10,11 +11,11 @@ public class Checkbox {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
-		System.out.println(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
+		Assert.assertFalse(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
 		driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).click();
-		System.out.println(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
+		Assert.assertTrue(driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).isSelected());
+		Assert.assertEquals(6, driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 		
-		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 
 	}
 
