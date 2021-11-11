@@ -26,7 +26,8 @@ public class SeleniumIntro {
 		
 		*/
 		
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\Alex\\SeleniumCourse\\SeleniumCourse\\msedgedriver.exe");
+		String driverPath = "C:\\Users\\user\\Desktop\\Selenium\\SeleniumCourse\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driverPath);
 		WebDriver driver = new EdgeDriver();
 		driver.get("https://rahulshettyacademy.com/");
 		System.out.println(driver.getTitle());//get the title of the website mentioned in line command on line 14 e shows it

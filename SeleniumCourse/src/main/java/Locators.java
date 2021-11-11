@@ -8,7 +8,7 @@ public class Locators {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Alex\\\\SeleniumCourse\\\\SeleniumCourse\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\Selenium\\SeleniumCourse\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		String username = "jessicaluz";
 		String wrongPassword = "testPassword";
