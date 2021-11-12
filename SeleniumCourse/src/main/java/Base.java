@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class Base {
@@ -16,8 +18,9 @@ public class Base {
 		String driverPath = "C:\\Users\\user\\Desktop\\Selenium\\SeleniumCourse\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
+		//defining implicity wait, so the code will not get error when trying to apply pormoCode
+//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		WebDriverWait w = new WebDriverWait(driver, 5);
 
 		//Create a array of strings that contains the products that I need/want to add to my cart
 		String[] itemsNeeded = {"Brocolli","Cucumber","Carrot"};
@@ -33,9 +36,14 @@ public class Base {
 		
 		driver.findElement(By.cssSelector("a.cart-icon")).click();
 		driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
-		//If we do not put a wait proccess, it will fail because it takes 2 seconds +- to load.
+		//If we do not put a wait process, it will fail because it takes 2 seconds +- to load.
+		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
 		driver.findElement(By.cssSelector("input.promoCode")).sendKeys(promoCode);
 		driver.findElement(By.cssSelector("button.promoBtn")).click();
+		/* Lets put a explicitly wait to do not get error when waiting for the return message about the pomoCode, but this time
+		il will just be applied in span promoInfo */
+		
+		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 		System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
 
 	}
