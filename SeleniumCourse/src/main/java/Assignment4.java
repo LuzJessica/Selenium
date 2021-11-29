@@ -26,8 +26,6 @@ public class Assignment4 {
 		System.out.println(driver.findElement(By.xpath("//div/h3")).getText());
 		driver.switchTo().window(parentWindow);
 		System.out.println(driver.findElement(By.xpath("//div[@id='content']/div/h3")).getText());
-
-
 	}
 
 }
