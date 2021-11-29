@@ -16,7 +16,7 @@ public class FrameTest {
 		
 		driver.get("http://jqueryui.com/droppable/");
 		System.out.println(driver.findElements(By.tagName("iframe")).size());
-		//moves to frame 
+		//moves to frame  
 		driver.switchTo().frame(driver.findElement(By.cssSelector("iframe.demo-frame")));
 		//now we can click on element
 		driver.findElement(By.id("draggable")).click();

@@ -15,7 +15,7 @@ public class ActionsDemo {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("http://www.google.com");
-		driver.manage().window().maximize();
+		driver.manage().window().maximize(); 
 		driver.navigate().to("https://www.amazon.com");
 		
 		WebElement move = driver.findElement(By.cssSelector("a[id='nav-link-accountList']"));
