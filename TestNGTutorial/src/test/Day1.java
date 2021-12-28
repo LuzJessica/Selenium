@@ -12,5 +12,10 @@ public class Day1 {
 	public void Demo() {
 		System.out.println("Hello TestNG");
 	}
+	
+	@Test
+	public void SecondTestCase() {
+		System.out.println("Hello Second Test");
+	}
 
 }
