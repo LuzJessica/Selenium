@@ -17,6 +17,20 @@ public class Day3 {
 	}
 	
 	@Test
+	public void MobileLogin1() {
+		//appium
+		System.out.println("MOBILE 1");
+	}
+	
+	
+	@Test
+	public void MobileLogin2() {
+		//appium
+		System.out.println("MOBILE 2");
+	}
+	
+	
+	@Test
 	public void APILogin() {
 		//rest api
 		System.out.println("API");

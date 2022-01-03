@@ -17,7 +17,8 @@
 		<classes>
 			<class name="test.Day3">
 				<methods>
-					<exclude name="MobileLogin" />
+				<!-- exclude every test cases that starts with Mobile --> 
+					<exclude name="API.*" />					 
 				</methods>
 			</class>
 		</classes>
