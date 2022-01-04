@@ -16,7 +16,7 @@ public class Day4 {
 		System.out.println("MOBILECAR");
 	}
 	
-	@Test
+	@Test(groups=("smokeTest"))
 	public void APILoginCarLoan() {
 		//rest api
 		System.out.println("APICAR");

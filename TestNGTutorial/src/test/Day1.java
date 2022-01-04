@@ -13,7 +13,11 @@ public class Day1 {
 		System.out.println("Hello TestNG");
 	}
 	
-	@Test
+	/*We can separet our tests in groups. So we can execute them separatelly. After sinalize this in the front of
+	 * the @Test anotation, we can call onli this test by passing in the xml file the tag groups, identifiyng the 
+	 * group by name. So it will execute only test methods that are part of the group*/
+	
+	@Test(groups=("smokeTest"))
 	public void SecondTestCase() {
 		System.out.println("Hello Second Test");
 	}

@@ -23,7 +23,7 @@ public class Day3 {
 	}
 	
 	
-	@Test
+	@Test(groups=("smokeTest"))
 	public void MobileLogin2() {
 		//appium
 		System.out.println("MOBILE 2");
