@@ -1,41 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="11" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-04T17:21:08 BRST" name="Suite" finished-at="2022-01-04T17:21:08 BRST" duration-ms="55">
+  <suite started-at="2022-01-04T18:12:21 BRST" name="Default suite" finished-at="2022-01-04T18:12:21 BRST" duration-ms="57">
     <groups>
       <group name="smokeTest">
-        <method signature="Day1.SecondTestCase()[pri:0, instance:test.Day1@61386958]" name="SecondTestCase" class="test.Day1"/>
-        <method signature="Day2.TestDay2()[pri:0, instance:test.Day2@31e5415e]" name="TestDay2" class="test.Day2"/>
-        <method signature="Day3.MobileLogin2()[pri:0, instance:test.Day3@1a4013]" name="MobileLogin2" class="test.Day3"/>
-        <method signature="Day4.APILoginCarLoan()[pri:0, instance:test.Day4@1b6e1eff]" name="APILoginCarLoan" class="test.Day4"/>
+        <method signature="Day1.SecondTestCase()[pri:0, instance:test.Day1@5939a379]" name="SecondTestCase" class="test.Day1"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2022-01-04T17:21:08 BRST" name="Regression" finished-at="2022-01-04T17:21:08 BRST" duration-ms="55">
+    <test started-at="2022-01-04T18:12:21 BRST" name="Default test" finished-at="2022-01-04T18:12:21 BRST" duration-ms="57">
       <class name="test.Day1">
-        <test-method signature="SecondTestCase()[pri:0, instance:test.Day1@61386958]" started-at="2022-01-04T17:21:08 BRST" name="SecondTestCase" finished-at="2022-01-04T17:21:08 BRST" duration-ms="8" status="PASS">
+        <test-method signature="Demo()[pri:0, instance:test.Day1@5939a379]" started-at="2022-01-04T18:12:21 BRST" name="Demo" finished-at="2022-01-04T18:12:21 BRST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+        <test-method signature="SecondTestCase()[pri:0, instance:test.Day1@5939a379]" started-at="2022-01-04T18:12:21 BRST" name="SecondTestCase" finished-at="2022-01-04T18:12:21 BRST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondTestCase -->
+        <test-method signature="testWithTimeOut()[pri:0, instance:test.Day1@5939a379]" started-at="2022-01-04T18:12:21 BRST" name="testWithTimeOut" finished-at="2022-01-04T18:12:21 BRST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithTimeOut -->
+        <test-method signature="atestThatDependsOnFirstMethod()[pri:0, instance:test.Day1@5939a379]" started-at="2022-01-04T18:12:21 BRST" name="atestThatDependsOnFirstMethod" finished-at="2022-01-04T18:12:21 BRST" depends-on-methods="test.Day1.Demo" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atestThatDependsOnFirstMethod -->
       </class> <!-- test.Day1 -->
-      <class name="test.Day2">
-        <test-method signature="TestDay2()[pri:0, instance:test.Day2@31e5415e]" started-at="2022-01-04T17:21:08 BRST" name="TestDay2" finished-at="2022-01-04T17:21:08 BRST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestDay2 -->
-      </class> <!-- test.Day2 -->
-      <class name="test.Day3">
-        <test-method signature="MobileLogin2()[pri:0, instance:test.Day3@1a4013]" started-at="2022-01-04T17:21:08 BRST" name="MobileLogin2" finished-at="2022-01-04T17:21:08 BRST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileLogin2 -->
-      </class> <!-- test.Day3 -->
-      <class name="test.Day4">
-        <test-method signature="APILoginCarLoan()[pri:0, instance:test.Day4@1b6e1eff]" started-at="2022-01-04T17:21:08 BRST" name="APILoginCarLoan" finished-at="2022-01-04T17:21:08 BRST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APILoginCarLoan -->
-      </class> <!-- test.Day4 -->
-    </test> <!-- Regression -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
